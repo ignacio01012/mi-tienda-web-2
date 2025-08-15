@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tienda Visual | Pedido por WhatsApp</title>
+  <meta name="description" content="Catálogo con precios y botón para pedir por WhatsApp." />
+  <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 2l2.09 6.26L20 9l-5 3.64L16.18 19 12 15.77 7.82 19 9 12.64 4 9l5.91-.74L12 2z" stroke="#38bdf8" stroke-width="1.2" fill="none"/>
+        </svg>
+        <h1>Catalogo</h1>
+        <span class="badge" title="100% responsive">RICH CALZADOS</span>
+      </div>
+      <div class="controls">
+        <input id="q" type="search" placeholder="Buscar productos… (ej: pantuflas, botas)" autocomplete="off" />
+        <select id="category">
+          <option value="">Todas las categorías</option>
+        </select>
+        <select id="sort">
+          <option value="relevance">Orden: Relevancia</option>
+          <option value="price_asc">Precio: menor a mayor</option>
+          <option value="price_desc">Precio: mayor a menor</option>
+          <option value="name_asc">Nombre: A → Z</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="grid" class="grid" aria-live="polite"></div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+  Redes sociales:
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" style="margin:0 8px; text-decoration:none;">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" width="20" height="20">
+  </a>
+  <a href="https://www.facebook.com/TU_USUARIO" target="_blank" rel="noopener" aria-label="Facebook" style="margin:0 8px; text-decoration:none;">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" width="20" height="20">
+  </a>
+  <a href="https://www.tiktok.com/@TU_USUARIO" target="_blank" rel="noopener" aria-label="TikTok" style="margin:0 8px; text-decoration:none;">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" width="20" height="20">
+  </a>
+</div>
+  </footer>
+  <script src="inicio.js"></script>
+</body>
+</html>
